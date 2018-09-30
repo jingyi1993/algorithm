@@ -10,6 +10,27 @@
 
 function reverseInt(n) {
 
+        const str = n.toString();
+        let reversed = '';
+        for(let char of str) {
+            reversed = char + reversed;
+        }
+
+
+        // if(n<0){
+        //     return parseInt(reversed)*(-1);
+        // }
+        return parseInt(reversed)* Math.sign(n);
+    // }else{
+    //     let n = n*(-1);
+    //     const str = n.toString();
+    //     let reversed = '';
+    //     for(let char of str) {
+    //         reversed = char + reversed;
+    //     }
+    //     return parseInt(reversed)*(-1);
+    // }
+
 }
 
 module.exports = reverseInt;

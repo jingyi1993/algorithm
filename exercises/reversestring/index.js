@@ -16,12 +16,12 @@ function reverse(arr) {
     //
     // return str
 
-//solu 1;
-    // let arr = str.split('')
-    // .reverse()
-    // .join('');
-    //
-    // return arr;
+// solu 1;
+//     let arr = str.split('')
+//     .reverse()
+//     .join('');
+//
+//     return arr;
 //solu 2;
 //     let reversed = '';
 //      //iterate through
@@ -32,7 +32,7 @@ function reverse(arr) {
 //solu 3;
     //string => array;
     //'abc' => [a,b,c];
-    return str.split('').reduce((reversed, char)=>{
+    return arr.split('').reduce((reversed, char)=>{
        return char + reversed;
     }, '');
 
