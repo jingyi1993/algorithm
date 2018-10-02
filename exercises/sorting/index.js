@@ -5,7 +5,7 @@ function bubbleSort(arr) {
     //implement bubblesort
 
     for(let i = 0 ; i< arr.length; i++){
-        for (let j= 0; j< (arr.length - i -1);i++ ){
+        for (let j= 0; j< (arr.length - i -1);j++ ){
             if(arr[j]> arr[j+1]){
                 const k = arr[j];
                 arr[j] = arr[j+1];
@@ -22,6 +22,22 @@ function bubbleSort(arr) {
 }
 
 function selectionSort(arr) {
+for(let i =0; i< arr.length; i++){
+    let indexOfMin = i;
+    for(let j = i+1 ; j< arr.length; j++){
+        if(arr[j]< arr[indexOfMin]){
+            indexOfMin =j
+        }
+    }
+    //arr[i] arr[indexOfMin]
+    let k =arr[i];
+    arr[i] = arr[indexOfMin];
+    arr[indexOfMin]=k;
+
+
+}
+return arr
+
 
 }
 
