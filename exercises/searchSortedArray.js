@@ -22,4 +22,4 @@ function search(arr,key) {
     // console.log('01')
 }
 
-search([1,3,5,7,9],10);
+search([1,3,5,7,9],5);
